@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>图片</title>
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/mode.css">
+	</head>
+	<style>
+		style * {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial;
+			padding: 10px;
+			background-image: url('img/bg.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+
+		}
+	</style>
+	<body>
+		<div class="topnav">
+			<a class="gg" href="index.html">主页</a>
+			<a class="gg" href="show.html">索引</a>
+			<a class="gg" href="#">视频</a>
+			<a class="gg" href="登录.html" style="float:right">注销</a>
+		</div>
+		<div class="isg__Img__wrap" id="wrap">
+		</div>
+		<script src="./js/data.js"></script>
+		<script src="./js/index.js"></script>
+		<script>
+			const img = new $isg_Img({
+				data: data,
+				curType: '全部',
+				parasitifer: '#wrap'
+			});
+		</script>
+	</body>
+</html>

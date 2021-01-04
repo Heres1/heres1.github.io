@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>不知名小网站</title>
+		<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<link rel="stylesheet" href="css/layout.css" type="text/css" />
+		<link rel="stylesheet" href="css/mode.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/comments.css">
+		<script src="js/xml.js"></script>
+
+		<style type="text/css">
+			style * {
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: Arial;
+				padding: 10px;
+				background-image: url('img/bg.jpg');
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="topnav">
+			<a class="gg" href="index.html">主页</a>
+			<a class="gg" href="show.html">索引</a>
+			<a class="gg" href="#">视频</a>
+			<a class="gg" href="login.html" style="float:right">注销</a>
+		</div>
+
+		<div class="row">
+			<div class="leftcolumn">
+				<div id="" style="color: white;size:a3;text-align: center;font-style: initial;">
+					time:<p id="time"></p>
+				</div>
+
+				<div class="swiper-contione">
+					<p style="color: white; text-align: center;">今日推荐</p>
+					<div class="swiper">
+
+						<div class="swiper-item">
+							<img src="img/总爱.jpg">
+						</div>
+						<div class="swiper-item">
+							<img src="img/咒术.jpg">
+						</div>
+						<div class="swiper-item">
+							<img src="img/成神.jpg">
+						</div>
+						<div class="swiper-item">
+							<img src="img/魔女.jpg">
+						</div>
+					</div>
+					<div class="swiper-point">
+						<div class="swiper-point-item">
+							<div class="point active"></div>
+							<div class="point"></div>
+							<div class="point"></div>
+							<div class="point"></div>
+						</div>
+					</div>
+					<div class="swiper-left">
+						<img src="./img/left.png">
+					</div>
+					<div class="swiper-right">
+						<img src="img/right.png">
+					</div>
+				</div>
+
+				<div class="card">
+					<h2>个人信息</h2>
+					<img src="img/头像.png" alt="1" style="width: 100%;border-top-style: solid;border:solid #ffffff8c;border-top-width: 2.6px;margin-top: 0px;">
+					<ul class="message">
+						<button type="button" onclick="validateForm()" id="按钮" style="background-color: #05DCF0;width: 80px;height: 60px;">注册</button>
+						<h3 id="nicheng" style="color: #ffffff"></h3>
+					</ul>
+				</div>
+			</div>
+			<div class="rightcolumn">
+				<h1>动漫</h1>
+				<ul id="parent">
+					<a class="zcx" target="_blank" href="html/总之就是非常可爱.html">
+						<img src="img/总爱.jpg" alt="" width="222px">
+						<div>总之就是非常可爱</div>
+					</a>
+					<a class="zcx" target="_blank" href="html/樱与抱月.html">
+						<img src="img/樱与抱月.jpg" alt="" width="222px">
+						<div>樱与抱月</div>
+					</a>
+					<a class="zcx" target="_blank" href="html/咒术回战.html">
+						<img src="img/咒术.jpg" alt="" width="222px">
+						<div>咒术回战</div>
+					</a>
+					<a class="zcx" target="_blank" href="html/全员恶玉.html">
+						<img src="img/全员.jpg" alt="" width="222px">
+						<div>全员恶玉</div>
+					</a>
+					<a class="zcx" target="_blank" href="html/成神之日.html">
+						<img src="img/成神.jpg" alt="" width="222px">
+						<div>成神之日</div>
+					</a>
+					<a class="zcx" target="_blank" href="html/我立于百万生命之上.html">
+						<img src="img/百万.jpg" alt="" width="222px">
+						<div>我立于百万生命之上</div>
+					</a>
+					<a class="zcx" target="_blank" href="html/鬼灭之刃.html">
+						<img src="img/鬼灭.jpg" alt="" width="222px">
+						<div>鬼灭之刃</div>
+					</a>
+					<a class="zcx" target="_blank" href="html/魔女之旅.html">
+						<img src="img/魔女.jpg" alt="" width="222px">
+						<div>魔女之旅</div>
+					</a>
+				</ul>
+				<h1>电视剧</h1>
+				<ul id="parent">
+					<a class="zcx" target="_blank">
+						<img src="img/半泽直树.jpg" alt="" width="222px">
+						<div>半泽直树</div>
+					</a>
+					<a class="zcx" target="_blank">
+						<img src="img/奇妙博物馆.jpg" alt="" width="222px">
+						<div>奇妙博物馆</div>
+					</a>
+					<a class="zcx" target="_blank">
+						<img src="img/风犬.jpg" alt="" width="222px">
+						<div>风犬少年的天空</div>
+					</a>
+					<a class="zcx" target="_blank">
+						<img src="img/非自然死亡.jpg" alt="" width="222px">
+						<div>非自然死亡</div>
+					</a>
+					<a class="zcx" target="_blank">
+						<img src="img/半泽直树2.jpg" alt="" width="222px">
+						<div>半泽直树2</div>
+					</a>
+					<a class="zcx" target="_blank">
+						<img src="img/奇妙博物馆2.jpg" alt="" width="222px">
+						<div>奇妙博物馆2</div>
+					</a>
+					<a class="zcx" target="_blank">
+						<img src="img/怪事屋.jpg" alt="" width="222px">
+						<div>怪事屋</div>
+					</a>
+					<a class="zcx" target="_blank">
+						<img src="img/深夜食堂.jpg" alt="" width="222px">
+						<div>深夜食堂</div>
+					</a>
+				</ul>
+			</div>
+			<div class="right">
+				<div id="">
+					<h1 style="color: white;">热播榜</h1>
+					<ul class="bangdan">
+						<li><a href="#">鬼灭之刃</a></li>
+						<li><a href="#">魔女之旅</a></li>
+						<li><a href="#">咒术回战</a></li>
+						<li><a href="#">全员恶玉</a></li>
+						<li><a href="#">成神之日</a></li>
+						<li><a href="#">樱与抱月</a></li>
+					</ul>
+				</div>
+				<div id="" style="margin-top: 380px;">
+					<h1 style="color: white;">热播榜</h1>
+					<ul class="bangdan">
+						<li><a href="#">半泽直树</a></li>
+						<li><a href="#">怪事屋</a></li>
+						<li><a href="#">非自然死亡</a></li>
+						<li><a href="#">深夜食堂</a></li>
+						<li><a href="#">奇妙博物馆</a></li>
+						<li><a href="#">风犬少年的天控</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class=".footer">
+				<div class="main">
+					<span>评论区</span>
+					<span class="tag">你最多可以输入30个字符</span>
+					<textarea id="text" cols="30" rows="10" maxlength="30" class="text"></textarea><br>
+					<input type="button" value="发 表" id="ipt">
+					<div id="txt">
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript" src="./js/main.js"></script>
+	</body>
+</html>

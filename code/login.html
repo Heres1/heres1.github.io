@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<style>
+		html {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			font-style: sans-serif;
+		}
+
+		body {
+			width: 100%;
+			height: 100%;
+			font-family: 'Open Sans', sans-serif;
+			margin: 0;
+			background-image: url(img/bg.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-color: #5aacdb71;
+		}
+
+		#login {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -150px 0 0 -150px;
+			width: 300px;
+			height: 300px;
+		}
+
+		#login h1 {
+			color: rgba(255, 255, 255, 0.123);
+			text-shadow: 0 0 10px;
+			letter-spacing: 1px;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 2em;
+			margin: 0.67em 0;
+		}
+
+		input {
+			width: 278px;
+			height: 18px;
+			margin-bottom: 10px;
+			outline: none;
+			padding: 10px;
+			font-size: 13px;
+			color: rgba(255, 255, 255, 0.418);
+			text-shadow: 1px 1px 1px;
+			border-top: 1px solid #312e3d75;
+			border-left: 1px solid #312e3d70;
+			border-right: 1px solid #312e3d78;
+			border-bottom: 1px solid #56536a6e;
+			border-radius: 4px;
+			background-color: #2d2d3f6b;
+		}
+
+		.but {
+			width: 300px;
+			min-height: 20px;
+			display: block;
+			background-color: #4a78d47e;
+			border: 1px solid #3761bc71;
+			color: #fff;
+			padding: 9px 14px;
+			font-size: 15px;
+			line-height: normal;
+			border-radius: 5px;
+			margin: 0;
+		}
+
+		.opacity {
+			filter: alpha(opacity=50);
+			-moz-opacity: 0.5;
+			-khtml-opacity: 0.5;
+			opacity: 0.5;
+		}
+	</style>
+	<head>
+		<meta charset="UTF-8">
+		<title>Login</title>
+
+	</head>
+	<body>
+		<div id="login">
+			<h1>Login</h1>
+			<form action="index.html" method="GET">
+				<input type="text" name="u" id="login1"></input>
+				<button class="but" type="submit" onclick="checkCookie()">登录</button>
+			</form>
+		</div>
+	</body>
+	<script>
+		function setCookie(cname, cvalue, exdays) {
+			var d = new Date();
+			d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+			var expires = "expires=" + d.toGMTString();
+			document.cookie = cname + "=" + cvalue + "; " + expires;
+		}
+
+		function checkCookie() {
+			var use = document.getElementById("login1");
+			var user = use.value;
+			setCookie("uesername", user, 30);
+			if (user != "") {
+				alert("欢迎拜访  " + user);
+			} else {
+				user = prompt("对不起! 你的用户名为输入:", "");
+				if (user != "" && user != null) {
+					setCookie("username", user, 30);
+				}
+			}
+		}
+	</script>
+</html>
