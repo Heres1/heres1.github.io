@@ -1,0 +1,116 @@
+.main {
+	width: 800px;
+	margin: 20px auto;
+	font-size: 30px;
+	color: white;
+}
+
+span {
+	display: inline-block;
+	width: 200px;
+	height: 25px;
+	line-height: 25px;
+	vertical-align: center;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.tag {
+	font-size: 23px;
+	margin-left: 370px;
+	vertical-align: bottom;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.text {
+	width: 750px;
+	height: 180px;
+	margin: 0 auto;
+
+	resize: none;
+}
+
+input {
+	display: inline-block;
+	width: 80px;
+	height: 50px;
+	border: 0;
+	margin-left: 2%;
+	margin-top: 3%;
+	background-color: rgba(255, 66, 66, 0.89);
+}
+
+.creatediv {
+	width: 675px;
+	height: 80px;
+	border: 1px solid gray;
+	position: relative;
+	margin-top: 10px;
+	padding-left: 75px;
+}
+
+.createinput {
+	width: 80px;
+	height: 30px;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
+
+.createimg {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+
+.createdivs {
+	width: 600px;
+	height: 50px;
+	position: absolute;
+	top: 15px;
+	left: 85px;
+}
+
+.bangdan {
+	color: white;
+	font-size: 1.5625rem;
+}
+
+.wrap {
+	width: 90%;
+	/*margin:10px auto;*/
+}
+
+.hide {
+	display: none;
+}
+
+#tab_t {
+	height: 45px;
+}
+
+#tab_t li {
+	display: inline-block;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	transition: 0.3s;
+	text-align: center;
+	color: white;
+	margin-top: 10px;
+	margin-right: 2%;
+}
+
+#tab_t .act {
+	border-color: tomato;
+	color: tomato;
+}
+
+#tab_c {
+	border: 2px solid white;
+	width: 100%;
+	height: 100%;
+}

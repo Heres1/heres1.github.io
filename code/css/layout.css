@@ -1,0 +1,50 @@
+.leftcolumn {
+	margin-top: 0px;
+	float: left;
+	width: 15%;
+}
+
+.rightcolumn {
+	margin-left: 5%;
+	margin-top: 0%;
+	float: left;
+	width: 60%;
+	padding-left: 10px;
+	color: white;
+}
+
+.right {
+	margin-left: 5%;
+	float: right;
+	width: 14%;
+}
+
+/* 列后面清除浮动 */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.footer {
+	margin-top: 1000px;
+	float: right;
+	height: 30%;
+	margin-left: 500px;
+}
+
+@media screen and (max-width: 800px) {
+
+	.leftcolumn,
+	.rightcolumn {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.topnav a {
+		float: none;
+		width: 100%;
+	}
+}

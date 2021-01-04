@@ -1,0 +1,123 @@
+.topnav {
+	overflow: hidden;
+	background-color: rgba(76, 160, 216, 0.479);
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.topnav a:hover {
+	background-color: #00f7ff75;
+	color: orange;
+}
+
+.leftcolumn {
+	margin-top: 3%;
+	float: left;
+	width: 30%;
+}
+
+.rightcolumn {
+	margin-top: 2%;
+	float: left;
+	width: 70%;
+	padding-left: 10px;
+	color: white;
+}
+
+/* 列后面清除浮动 */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* 底部 */
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: rgb(103, 212, 245);
+	margin-top: 1000px;
+}
+
+@media screen and (max-width: 800px) {
+
+	.leftcolumn,
+	.rightcolumn {
+		width: 50%;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.topnav a {
+		float: none;
+		width: 50%;
+	}
+}
+
+a {
+	display: inline-block;
+	border: 2px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	transition: 0.3s;
+	text-align: center;
+	color: white;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+a:hover {
+	border-color: tomato;
+	color: tomato;
+}
+
+.hh {
+	border: 1px solid white;
+	display: inline-block;
+	border-radius: 4px;
+
+}
+
+.wrap {
+	width: 90%;
+	/*margin:10px auto;*/
+}
+
+.hide {
+	display: none;
+}
+
+#tab_t {
+	height: 45px;
+}
+
+#tab_t li {
+	display: inline-block;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	transition: 0.3s;
+	text-align: center;
+	color: white;
+	margin-top: 10px;
+	margin-right: 2%;
+}
+
+#tab_t .act {
+	border-color: tomato;
+	color: tomato;
+}
+
+#tab_c {
+	border: 2px solid white;
+	width: 100%;
+	height: 100%;
+}
